@@ -1,0 +1,201 @@
+/* Start Global Rules */
+:root {
+  --main-color: #009688;
+  --background-color: #eee;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+}
+
+.contaienr {
+  width:1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* End Global Rules */
+
+/* Start Edit Header */
+.header {
+  background-color: var(--main-color);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+}
+/* End Edit Header */
+
+/* Start Edit Gamer Info */
+.gamer-info {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gamer-info .gamer {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gamer-info select {
+  width: 80px;
+  border: 2px solid var(--main-color);
+  padding: 2px;
+  border-radius: 3px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.gamer-info select:focus {
+  border: 2px solid var(--main-color);
+}
+
+.gamer-info .gamer .gamer-name {
+  color: var(--main-color);
+}
+
+.game-info {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background: #fff;
+  border: 2px solid var(--main-color);
+  border-radius: 3px;
+}
+
+.start-game-btn {
+  padding: 20px;
+  background-color: var(--main-color);
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* End Edit Gamer Info */
+
+/* Start edit the word */
+.the-word {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  background: #009688;
+  margin: 10px 0;
+  color: #ffffff;
+  display: none;
+}
+/* End edit the word */
+
+/* Start Edit Input */
+input {
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid var(--main-color);
+  text-align: center;
+  font-size: 20px;
+  caret-color: var(--main-color);
+}
+
+input:focus{
+  outline-color: var(--main-color);
+}
+/* End Edit Input */
+
+/* Start Edit Upcomming Words  */
+.upcomming-words {
+  padding:5px;
+  background-color: #fff;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: bold;
+  display: none;
+}
+
+.upcomming-words span {
+  padding: 10px;
+  margin: 5px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+/* End Edit Upcomming Words  */
+
+/* Start Edit current game result */
+.current-game-result {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.game-info span,
+.remaining-words span,
+.remaining-time span {
+  color: var(--main-color);
+}
+
+.wrong-words span {
+  color: red;
+}
+
+.right-words {
+  color: green;
+}
+
+.game-info span:after,
+.right-words span:after,
+.wrong-words span:after,
+.remaining-words span:after,
+.remaining-time span:after {
+  content: ' ]';
+}
+
+.game-info span:before,
+.right-words span:before,
+.wrong-words span:before,
+.remaining-words span:before,
+.remaining-time span:before {
+  content: '[ ';
+}
+/* End Edit current game result */
+
+.right-word {
+  opacity: 50%;
+}
+
+.current-word {
+  border: 2px solid #607d8b;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 2
+}
+
+.the-resutl {
+  background: #fff !important;
+  color: var(--main-color) !important;
+  font-weight: bold !important;
+  outline: 5px double var(--main-color) !important;
+}

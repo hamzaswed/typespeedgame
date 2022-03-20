@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <title>Typing Game</title>
+</head>
+  <body>
+    <div class="header">
+      <div>Typing Speed Game</div>
+    </div>
+    <div class="game-body">
+      <div class="contaienr">
+        <div class="gamer-info">
+          <div class="gamer">
+            <div>Hello <span class="gamer-name">Hamza</span> Select Your Game Level</div>
+          </div>
+          <select name="" class="game-levels" onchange="">
+            <option value="Easy">Easy</option>
+            <option value="Normal">Normal</option>
+            <option value="Hard">Hard</option>
+          </select>
+        </div>
+        <div class="game-info">
+          <div>Your Are Playing On <span class="selected-lev"></span> Level & You Have <span class="lev-second"></span> Second To Type The Word</div>
+        </div>
+        <div class="start-game-btn">Start Playing</div>
+        <div class="the-word"></div>
+        <input type="text" class="words-put">
+        <div class="upcomming-words">
+          
+        </div>
+        <div class="current-game-result">
+          <div class="remaining-time">Time Left: <span></span> Seconds</div>
+          <div class="remaining-words">Word <span class="typed-words-count">0</span> From <span class="remaining-words-coutn" ></span></div>
+          <div class="wrong-words">Worng Words: <span class="wrong-words-count">0</span></div>
+          <div class="right-words">Right Words: <span class="right-words-count">0</span></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
